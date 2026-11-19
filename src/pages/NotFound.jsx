@@ -1,0 +1,1 @@
+import Button from '../components/Button'; export default function NotFound(){return <section className="not-found"><div className="container"><span className="eyebrow">ERROR 404</span><h1>Looks like this<br/><em>page wandered off.</em></h1><p>The page you are looking for doesn't exist or may have moved.</p><Button to="/">Back to homepage ↗</Button></div></section>}

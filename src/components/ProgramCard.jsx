@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function ProgramCard({program}){return <article className="program-card"><div className={`program-art ${program.tone}`}><span>{program.icon}</span><small>{program.category}</small></div><div className="program-content"><span className="eyebrow">{program.duration}</span><h3>{program.title}</h3><p>{program.description}</p><Link className="text-link" to={`/programs/${program.id}`}>View details <span>↗</span></Link></div></article>}

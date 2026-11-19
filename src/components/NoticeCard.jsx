@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom';
+export default function NoticeCard({notice}){return <article className="notice-card"><div className="card-meta"><span className="tag">{notice.category}</span><time>{notice.date}</time></div><h3>{notice.title}</h3><p>{notice.description}</p><Link className="text-link" to="/notices">Read notice <span>↗</span></Link></article>}
