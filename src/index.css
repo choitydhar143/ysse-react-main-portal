@@ -1,0 +1,43 @@
+
+/* 1. Google Fonts – must come first */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* 2. Tailwind CSS */
+@import "tailwindcss";
+
+/* 3. Learning Catalog styles */
+@import "./catalog.css";
+
+/* 4. Custom Theme */
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Manrope", sans-serif;
+
+  --color-ysse: #174b40;
+  --color-ysse-dark: #103a33;
+  --color-ysse-lime: #c6ed78;
+}
+
+/* 5. Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "DM Sans", sans-serif;
+  color: #1d2926;
+  background: #fff;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}

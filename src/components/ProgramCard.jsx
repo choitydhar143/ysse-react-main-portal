@@ -1,0 +1,7 @@
+import { Link } from 'react-router-dom';
+export default function ProgramCard({ program }) {
+  return <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-950/10">
+    <div className="relative h-52 overflow-hidden bg-emerald-50"><img src={program.image} alt={`${program.title} programme`} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-transparent"/><span className="absolute bottom-4 left-4 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-emerald-900">{program.category}</span></div>
+    <div className="p-6"><div className="mb-3 flex items-center justify-between gap-3"><span className="text-xs font-bold uppercase tracking-wider text-emerald-700">{program.duration}</span><span className="text-lg text-emerald-700" aria-hidden="true">↗</span></div><h3 className="font-display text-xl font-extrabold leading-snug text-slate-900">{program.title}</h3><p className="mt-3 min-h-[76px] text-sm leading-7 text-slate-600">{program.description}</p><Link className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-emerald-800 hover:text-emerald-600" to={`/programs/${program.id}`}>View details <span aria-hidden="true">→</span></Link></div>
+  </article>;
+}

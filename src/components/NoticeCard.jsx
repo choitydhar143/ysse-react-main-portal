@@ -1,0 +1,4 @@
+import { Link } from 'react-router-dom';
+export default function NoticeCard({ notice }) {
+  return <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><div className="mb-5 flex flex-wrap items-center justify-between gap-3"><span className="rounded-full bg-emerald-50 px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-wide text-emerald-800">{notice.category}</span><time className="text-xs font-medium text-slate-500">{notice.date}</time></div><h3 className="font-display text-lg font-extrabold leading-snug text-slate-900">{notice.title}</h3><p className="mt-3 flex-1 text-sm leading-7 text-slate-600">{notice.description}</p><Link to="/notices" className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-emerald-800 hover:text-emerald-600">Read more <span aria-hidden="true">→</span></Link></article>;
+}
