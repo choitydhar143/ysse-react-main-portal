@@ -1,77 +1,100 @@
-# YSSE Main Portal — Week 8 (React + Tailwind CSS)
 
-A responsive multi-page student portal upgraded from the Week 7 React + Vite project. Tailwind CSS v4 is the primary styling system. React Router, existing data-driven pages, search/filter interactions, dynamic programme details, the Learning Catalog and frontend contact validation are retained.
+# YSSE Main Portal
 
-> **Content and brand note:** The six programme cards, notice entries and homepage events are illustrative sample content, not verified official YSSE offerings or announcements. No organisational statistics are invented. The existing hosted YSSE logo asset from the Week 7 project is retained in the navbar and footer. Verify logo usage and replace the hosted asset with an approved official SVG/PNG if supplied by YSSE.
+### Week 8 – React Router & Tailwind CSS Project
 
-## Pages and routes
+A responsive multi-page website concept for YSSE (Young Social Entrepreneurs), designed to showcase youth-focused learning, leadership, programmes, announcements, and learning opportunities.
 
-| Page | Route |
-|---|---|
-| Home | `/` |
-| About | `/about` |
-| Notices | `/notices` |
-| Programs | `/programs` |
-| Program details | `/programs/:id` |
-| Contact | `/contact` |
-| Learning Catalog (Week 7 extra feature) | `/learning-catalog` |
-| Not found | `*` |
+## Live Website
 
-## Main features
+[Visit the Live Website](https://choitydhar143.github.io/ysse-react-main-portal/)
 
-- Responsive navigation with mobile menu and active route states
-- Shared responsive footer and reusable Button, ProgramCard and NoticeCard components
-- Home page: hero, About preview, programme cards, notices, sample upcoming events and CTA
-- About page: introduction, mission, vision, What We Do, impact placeholder and Get Involved
-- Notices page: six sample notices, search, category filtering and empty state
-- Programs page: six photographic sample programme cards and category filter
-- Dynamic program details, back navigation and invalid-ID handling
-- Contact form: full name, email, subject, message, validation errors and success feedback
-- Week 7 Learning Catalog preserved with search, topic/duration/level filters, sorting, saved/enrolled lists and light/dark mode
-- Responsive layouts using Tailwind breakpoints, Flexbox, Grid, spacing, typography and interactive states
+## GitHub Repository
 
-## Tech stack
+[View Source Code](https://github.com/choitydhar143/ysse-react-main-portal)
 
-React 18, Vite, React Router DOM 6, Tailwind CSS v4, JavaScript (JSX). No Bootstrap or Material UI.
+## Features
 
-## Requirements
+- Responsive Home page
+- About YSSE page
+- Notices and announcements page
+- Programs listing page
+- Individual Program Details page
+- Learning Catalog with search and filtering options
+- Contact page with form validation
+- Responsive navigation menu
+- Mobile-friendly layout
 
-- Node.js 18 or later
-- npm
+## Technologies Used
 
-## Install and run locally
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- JavaScript
+- CSS
+
+## Project Structure
+
+```text
+ysse-react-main-portal/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── layouts/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## Installation and Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/choitydhar143/ysse-react-main-portal.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd ysse-react-main-portal
+```
+
+3. Install dependencies:
 
 ```bash
 npm install
+```
+
+4. Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally `http://localhost:5173/`).
-
-## Production build
+5. Build the project:
 
 ```bash
 npm run build
-npm run preview
 ```
 
-## Deploy to GitHub Pages
+## Deployment
 
-The Vite production base is configured for this repository: `ysse-react-main-portal`.
+The project is deployed using GitHub Pages.
 
-1. Push the complete source to the `main` branch of `https://github.com/choitydhar143/ysse-react-main-portal`.
-2. Install dependencies and run `npm run deploy`.
-3. In GitHub, open **Settings → Pages** and select the `gh-pages` branch and `/(root)` folder if not already selected.
-4. Expected URL: `https://choitydhar143.github.io/ysse-react-main-portal/`.
+## Note
 
-## Screenshots for submission
+This project contains illustrative sample content created for the assignment. The contact form is a front-end demonstration and does not send or store messages because no backend is connected.
 
-Capture each required page at desktop width and mobile width (e.g. 390–400 px): Home, About, Notices, Programs, one valid Program Details page, Contact, plus the Learning Catalog as an additional feature. Also capture Contact form validation feedback and the mobile navigation open state. Use browser DevTools device emulation or resize the browser.
-
-## Contact form limitation
-
-The form is frontend-only as required. It validates values and displays a local success message; it does not send, save or store messages.
-
-## Git hygiene
-
-`node_modules/`, `dist/` and environment files are excluded by `.gitignore`. Do not commit `node_modules`.
+---
+**Project:** YSSE Main Portal  
+**Assignment:** Week 8 – React & Tailwind CSS
